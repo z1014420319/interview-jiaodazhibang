@@ -7,7 +7,7 @@ import type { MenuInfo } from "@/types";
 
 export default function MainContent(props: { currentTab: MenuInfo | null }) {
   const title =
-    (props.currentTab?.domEvent.target as HTMLElement)?.innerHTML || "";
+    (props.currentTab?.domEvent.target as HTMLElement)?.innerText || "";
 
   const [inputValue, setInputValue] = useState("");
 
